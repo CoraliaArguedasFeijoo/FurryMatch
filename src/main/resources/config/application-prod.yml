@@ -49,10 +49,11 @@ spring:
   liquibase:
     contexts: prod
   mail:
-    host: localhost
-    port: 25
-    username:
-    password:
+    host: smtp.gmail.com
+    port: 587
+    username: furrymatchapp@gmail.com #Replace this field with your Gmail username.
+    password: ndxcpxqjmjzyfihr #Replace this field with your Gmail password/App password.
+    protocol: smtp
   thymeleaf:
     cache: true
   main:
@@ -104,7 +105,6 @@ jhipster:
       # security key (this key should be unique for your application, and kept secret)
       key: 7b4bc4aaec3f15078a41595e3bc28ceee157e64f4ad2594f0d708afdebbab15744a8cdff5d249c69c7a5e980f30681ce0842
   mail: # specific JHipster mail property, for standard properties see MailProperties
-    base-url: https://furrymatch.azurewebsites.net # Modify according to your server's URL
     host: smtp.gmail.com
     port: 587
     username: furrymatchapp@gmail.com #Replace this field with your Gmail username.
